@@ -33,48 +33,48 @@
 # dic_updater("three",3,{})
 # dic_updater("four",4)
 
-def say_hi(func):
-    def wrapper(*args, **kwargs):
-        print("hi")
-        ret = func(*args, **kwargs)
-        print("bye")
-        return ret
-    return wrapper
+# def say_hi(func):
+#     def wrapper(*args, **kwargs):
+#         print("hi")
+#         ret = func(*args, **kwargs)
+#         print("bye")
+#         return ret
+#     return wrapper
 
-def say_yo(func):
-    def wrapper(*args, **kwargs):
-        print("yo")
-        return func(*args, **kwargs)
-    return wrapper
+# def say_yo(func):
+#     def wrapper(*args, **kwargs):
+#         print("yo")
+#         return func(*args, **kwargs)
+#     return wrapper
 
-@say_hi
-@say_yo
-def func():
-    print("ROCK & ROLL")
+# @say_hi
+# @say_yo
+# def func():
+#     print("ROCK & ROLL")
 
-func()
+# func()
 
-def decorator_a(func):
-    print ('Get in decorator_a')
-    def inner_a(*args, **kwargs):
-        print ('Get in inner_a')
-        return func(*args, **kwargs)
-    return inner_a
+# def decorator_a(func):
+#     print ('Get in decorator_a')
+#     def inner_a(*args, **kwargs):
+#         print ('Get in inner_a')
+#         return func(*args, **kwargs)
+#     return inner_a
 
-def decorator_b(func):
-    print ('Get in decorator_b')
-    def inner_b(*args, **kwargs):
-        print ('Get in inner_b')
-        return func(*args, **kwargs)
-    return inner_b
+# def decorator_b(func):
+#     print ('Get in decorator_b')
+#     def inner_b(*args, **kwargs):
+#         print ('Get in inner_b')
+#         return func(*args, **kwargs)
+#     return inner_b
 
-@decorator_b
-@decorator_a
-def f(x):
-    print ('Get in f')
-    return x * 2
+# @decorator_b
+# @decorator_a
+# def f(x):
+#     print ('Get in f')
+#     return x * 2
 
-f(1)
+# f(1)
 
 #函数后调用达到装饰器效果
 # @decorator_a
@@ -88,3 +88,7 @@ f(1)
 #     return x * 2
 
 # f = decorator_a(f)
+
+
+git test
+git test1
